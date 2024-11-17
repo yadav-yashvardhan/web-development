@@ -3,29 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><CSS-SPECIFICITY></title>
-        <style>
-          h1{
-            color: aqua;
-          }
-          .red{
-            color: blue;
-          }
-          .geen{
-            color: brown;
-          }
-          .yellow{
-            color: purple;
-          }
-          a.harrclass.rohan-class[href]:hover{
-            color: blueviolet;
-          }
-        </style>
+    <title>CSS-DISPLAY</title>
+    <style>
+        body{
+            background-color: rgb(209, 159, 209);
+        }
+        p.first{
+            display: inline;
+            margin: 25px;
+            /*border: solid black;*/
+            text-decoration: underline;
+            padding: 25px;
+        
+        }
+
+        p.second{
+            border: 2px solid black;
+            margin: 55px;
+            padding: 55px 100px 55px 100px;
+            display: inline-block;
+        }
+p.third{
+    display: none;
+    border: 2px solid black;
+}
+p.fourth{
+    visibility: hidden;
+    border: 2px solid black;
+}
+    </style>
 </head>
 <body>
-    
+    <h1>CSS-DISPLAY</h1>
     <div>
-        <h1 class="red yellow green">CSS-SPECIFICITY</h1>
+        <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt omnis iusto beatae dolor doloribus! Reiciendis amet sint modi excepturi consectetur?</p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia accusamus magni error ipsum recusandae, molestiae perspiciatis exercitationem nihil deserunt! Vel!
+    </div>
+    <div>
+        <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aspernatur asperiores officia nobis blanditiis earum quos ut distinctio reiciendis voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum laborum est quam minus officiis eaque fugit aliquam deleniti sit?</p>
+    </div>
+    <div>
+        <p class="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facilis corrupti ipsa beatae amet quasi aliquid ad eveniet debitis repudiandae!</p>
+    </div>
+    <div>
+        <p class="fourth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam voluptatem iure accusamus inventore ea molestias nisi voluptatum aspernatur iste sapiente?</p>
     </div>
 </body>
 </html>
